@@ -17,6 +17,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/emojionearea.min.css" />
+    <script src="JS/emojionearea.min.js"></script>
   </head>
   <body>
     <section class="msger">
@@ -41,6 +43,13 @@
           class="msger-input"
           placeholder="Enter your message..."
         />
+        <script>
+          $(document).ready(function () {
+            $("#messageInp").emojioneArea({
+              pickerPosition: "top",
+            });
+          });
+        </script>
         <button type="submit" class="msger-send-btn">Send</button>
       </form>
     </section>
